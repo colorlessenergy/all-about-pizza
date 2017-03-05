@@ -4,7 +4,7 @@ html, body {
   padding: 0;
 }
 
-footer nav ul {
+footer nav ul, header nav ul {
   align-items: center;
   background-color: #000;
   color: #fff;
@@ -16,14 +16,19 @@ footer nav ul {
   padding: 0;
 }
 
-header {
+
+header, header nav ul {
   background-color: yellow;
 }
 
-header nav div p a {
-  color: #444547;
+header nav ul li a {
+  color: #000;
   font-size: 20px;
   text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #04516B;
 }
 
 header section {
@@ -39,7 +44,7 @@ section img {
 }
 
 span {
-  transform: rotateZ(-10deg);
+  transform: rotateZ(-7deg);
 }
 
 header section div {
@@ -53,35 +58,6 @@ header section div a {
   color: #fff;
   padding: 5px;
   text-decoration: none;
-}
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-}
-
-ul.topnav li {
-  float: left;
-}
-
-ul.topnav li a {
-  color: #000;
-  display: inline-block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-ul.topnav li a:hover {
-  background-color: #fff;
-}
-
-ul.topnav li.icon {
-  display: none;
 }
 
 .depth {
@@ -104,20 +80,22 @@ ul.topnav li.icon {
 }
 
 .info-container {
+  display: flex;
   height: 500px;
   margin-top: 100px;
+  margin-left: 35px;
 }
 
 .info {
   display: flex;
-  height: 350px;
   -webkit-border-radius: 0 150px;
   border-radius: 0 150px;
   background: #27dbb7;
-  -webkit-transform: rotateZ(10deg);
-  width: 95%;
-  transform: rotateZ(10deg);
+  height: 350px;
   justify-content: space-around;
+  transform: rotate(9deg);
+  transform-origin: top left;
+  width: 90%;
 }
 
 .info-color {
@@ -133,7 +111,7 @@ ul.topnav li.icon {
 }
 
 section span {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 section span img  {
@@ -177,33 +155,4 @@ section span img  {
 
 .right {
   margin-left: 10px;
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {
-    display: none;
-  }
-  ul.topnav li.icon {￼
-    float: right;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {
-    position: relative;
-  }
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
 }
