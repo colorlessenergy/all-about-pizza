@@ -5,36 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>pizza</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <header>
   <nav>
-    <ul>
-      <li>home</li>
-      <li>github</li>
-      <li>website</li>
+    <ul class="topnav" id="myTopnav">
+      <li><a href="#">home</a></li>
+      <li><a class="active" href="https://colorlessenergy.github.io/">website</a></li>
+      <li><a href="https://github.com/colorlessenergy">github</a></li>
+      <li class="icon">
+        <a href="#" style="font-size:15px;" onclick="changeNav()">☰</a>
+      </li>
     </ul>
   </nav>
   <section>
     <div>
-      <p>pizza is really good!</p>
+      <h1>All About Pizza</h1>
+      <p>pizza is really good! YUM</p>
       <a href="#">more info</a>
     </div>
     <img src="assets/pizza6.png" alt="pizza slice">
   </section>
 </header>
-<section>
-  <h2>pizza taste really good</h2>
-  <p>there is alot of different toppings on pizza</p>
+<section class="intro">
+  <div>
+    <h2>Everyone loves the taste of Pizza!</h2>
+    <p>there is so much variety of Pizza!</p>
+  </div>
   <img src="assets/pizza2.png" alt="pizza slice">
 </section>
 <div>
-  <section>
-    <div>
-      <h2>The pizza</h2>
-      <p>The pizza has many shapes and forms</p>
-      <img src="assets/pizza3.png" alt="pizza slice">
+  <section class="info-container">
+    <div class="info">
+      <div>
+        <span><h2>The pizza</h2></span>
+        <span><p>The pizza has many shapes and forms</p></span>
+      </div>
+      <span><img src="assets/pizza3.png" alt="pizza slice"></span>
     </div>
   </section>
   <section>
@@ -89,5 +98,6 @@
     </ul>
   </nav>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>
