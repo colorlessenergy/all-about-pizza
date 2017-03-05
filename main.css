@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: yellow;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+header section {
+  color: #444547;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+header section img {
+  min-width: 0;
+}
+
+header section div {
+  align-self: center;
+  margin-left: 10px;
+}
+
+header section div a {
+  background-color: purple;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
